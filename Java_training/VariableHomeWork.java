@@ -1,3 +1,4 @@
+package Java_training;
 public class VariableHomeWork {
     public static void main(String[] args) {
         int days = 10000;

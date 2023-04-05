@@ -1,3 +1,4 @@
+package Java_training;
 public class Variable1 {
     public static void main(String[] args) {
         int John = 100;

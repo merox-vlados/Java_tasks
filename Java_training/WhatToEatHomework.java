@@ -1,3 +1,4 @@
+package Java_training;
 public class WhatToEatHomework {
     public static void main(String[] args) {
         int money = 6;
