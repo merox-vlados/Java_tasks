@@ -1,9 +1,9 @@
 package OOP;
 
 public class Box {
-     private double length;
-     private double width;
-     private double height;
+    private double length;
+    private double width;
+    private double height;
 
     public Box() {
         this(10);
@@ -13,14 +13,14 @@ public class Box {
         this(another.length, another.width, another.height);
     }
 
-    public Box (double length, double width, double height) {
+    public Box(double length, double width, double height) {
         this.length = length;
         this.width = width;
         this.height = height;
     }
 
     public Box(double size) {
-        this(size,size,size);
+        this(size, size, size);
     }
 
     public double getLength() {
@@ -64,13 +64,12 @@ public class Box {
         if (currentVolume > anotherVolume) {
             result = 1;
         } else if (currentVolume < anotherVolume) {
-            result =  -1;
+            result = -1;
         } else {
             result = 0;
         }
         return result;
     }
-
 
 
     public double getVolume() {
@@ -85,6 +84,12 @@ public class Box {
 
     public Box increase() {
         return new Box(this.length * 2, this.width * 2, this.height * 2);
+    }
+
+    public void showInfo() {
+        System.out.println("Длина: " + this.length +
+                " Ширина: " + this.width +
+                " Высота: " + this.height);
     }
 
 }
